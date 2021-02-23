@@ -1,0 +1,436 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+
+  --black-text: rgba(33, 33, 33, 1);
+
+  --blue-text: rgba(33, 150, 243, 1);
+
+  --gray-text: rgba(117, 117, 117, 1);
+
+  --back-gray: rgba(47, 48, 58, 1);
+
+  --back-middle_gray: rgba(245, 244, 250, 1);
+
+  --back-strong_gray: rgba(229, 229, 229, 1);
+
+  --card-set-gap: 30px;
+
+  --background-gray-op40: rgba(47, 48, 58, 0.4);
+
+  --icons-gray: rgba(175, 177, 184, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.cards-container {
+  padding-bottom: 94px;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 65px;
+}
+
+.nav-list li {
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: 280px;
+  padding-top: 5px;
+}
+
+.header-contacts li:first-child {
+  padding-top: 3px;
+}
+
+.header-contacts li:last-child {
+  margin-left: 50px;
+}
+
+.section-effective {
+  height: 600px;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-effective::before {
+  content: '';
+  max-width: 1600px;
+  background-color: var(--background-gray-op40);
+}
+
+.section-effective-title {
+  color: var(--white-text);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.btn-order {
+  color: var(--white-text);
+  border: none;
+  background: var(--blue-text);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  height: 50px;
+  width: 200px;
+}
+
+.btn-order-container {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.merits {
+  display: flex;
+  padding-left: 55px;
+  padding-top: 94px;
+}
+
+.merits li {
+  margin-right: 30px;
+}
+
+.merit-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--back-middle_gray);
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+.client-icon-container {
+  width: 170px;
+  height: 90px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.link-client {
+  color: var(--icons-gray);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.merit-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text);
+  margin-bottom: 10px;
+}
+
+.merit-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+}
+
+.section-titles {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.what-we-do-imgs {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-between;
+}
+
+.team {
+  background-color: var(--back-middle_gray);
+}
+
+.team-list {
+  padding: 0;
+  padding-bottom: 94px;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  text-align: center;
+}
+
+.team-member-profession {
+  color: var(--gray-text);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.studio-title-white {
+  font-family: 'Raleway', sans-serif;
+  color: var(--white-text);
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.studio-title-black {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-text);
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.web-title {
+  color: var(--blue-text);
+}
+
+.physical-address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+  margin-top: 20px;
+}
+
+.contacts-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text-op60);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--blue-text);
+  text-decoration: none;
+}
+
+.link-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link-item-black {
+  color: var(--black-text);
+}
+
+.link-item-gray {
+  color: var(--gray-text);
+  display: block;
+}
+
+.link-item-gray :nth-child(2) {
+  padding-bottom: 200px;
+}
+
+.link-item-gray .email-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.btns {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.btns-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.btns-portfolio li {
+  margin-right: 8px;
+}
+
+.btn-portfolio {
+  background: var(--back-middle_gray);
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+
+.btns-portfolio :hover {
+  background: var(--blue-text);
+  color: var(--white-text);
+}
+
+.portfolio-cards {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.portfolio-cards li {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.portfolio-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+}
+
+.portfolio-item-type {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.current {
+  color: var(--blue-text);
+}
+
+footer {
+  background-color: var(--back-gray);
+}
+
+.logo-container {
+  padding-top: 60px;
+}
+
+.footer-contacts {
+  margin-top: 20px;
+  padding-bottom: 51px;
+}
+
+.footer-contacts li {
+  margin-bottom: 9px;
+}
+
+.team-card {
+  background-color: var(--white-text);
+}
+
+.team-card-content {
+  padding: 30px;
+}
+
+.container-effective {
+  background-image: url('images\background.jpg');
+}
