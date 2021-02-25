@@ -552,6 +552,7 @@ footer {
 
 .card {
   text-decoration: none;
+  color: var(--black-text);
 }
 
 .card:visited,
