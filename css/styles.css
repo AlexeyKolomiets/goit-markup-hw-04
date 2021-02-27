@@ -571,7 +571,6 @@ footer {
   display: block;
   color: var(--white-text);
   font-family: 'Raleway', sans-serif;
-  color: var(--white-text);
   font-weight: bold;
   font-size: 26px;
 }
